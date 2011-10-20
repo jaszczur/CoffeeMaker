@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 
 /**
  *
@@ -20,6 +21,8 @@ public class Coffee implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    @Lob
+    private String description;
 
     public Long getId() {
         return id;
@@ -27,6 +30,14 @@ public class Coffee implements Serializable {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     @Override
@@ -52,6 +63,17 @@ public class Coffee implements Serializable {
     @Override
     public String toString() {
         return "pl.jaszczur.coffemaker.domain.Coffee[ id=" + id + " ]";
+    }
+
+    public void prepare() {
+        description = "An aromatic coffee";
+    }
+    
+    public void save() {
+    }
+    
+    protected void addIngredient(String ingrDesc) {
+        description += " with " + ingrDesc;
     }
     
 }
