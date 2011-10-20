@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>CoffeeMaker</artifactId>
-    <groupId>pl.jaszczur.coffemaker</groupId>
+    <groupId>pl.jaszczur.coffeemaker</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>pl.jaszczur.coffemaker</groupId>
+  <groupId>pl.jaszczur.coffeemaker</groupId>
   <artifactId>CoffeeMaker-ear</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>ear</packaging>
@@ -39,13 +39,13 @@
   </build>
     <dependencies>
         <dependency>
-            <groupId>pl.jaszczur.coffemaker</groupId>
+            <groupId>pl.jaszczur.coffeemaker</groupId>
             <artifactId>CoffeeMaker-ejb</artifactId>
             <version>1.0-SNAPSHOT</version>
             <type>ejb</type>
         </dependency>
         <dependency>
-            <groupId>pl.jaszczur.coffemaker</groupId>
+            <groupId>pl.jaszczur.coffeemaker</groupId>
             <artifactId>CoffeeMaker-web</artifactId>
             <version>1.0-SNAPSHOT</version>
             <type>war</type>

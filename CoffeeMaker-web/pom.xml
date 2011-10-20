@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>CoffeeMaker</artifactId>
-    <groupId>pl.jaszczur.coffemaker</groupId>
+    <groupId>pl.jaszczur.coffeemaker</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>pl.jaszczur.coffemaker</groupId>
+  <groupId>pl.jaszczur.coffeemaker</groupId>
   <artifactId>CoffeeMaker-web</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
