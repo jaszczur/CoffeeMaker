@@ -10,6 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
+import javax.persistence.Transient;
 
 /**
  *
@@ -23,6 +24,8 @@ public class Coffee implements Serializable {
     private Long id;
     @Lob
     private String description;
+    @Transient
+    private CoffeeMachineAdapterFactory factory = new CoffeeMachineAdapterFactory();
 
     public Long getId() {
         return id;
@@ -69,7 +72,8 @@ public class Coffee implements Serializable {
         description = "An aromatic coffee";
     }
     
-    public void save() {
+    public void notifyMachine() {
+        factory.getAdapter().prepareCoffee(this);
     }
     
     protected void addIngredient(String ingrDesc) {

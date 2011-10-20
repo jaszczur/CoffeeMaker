@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import pl.jaszczur.coffemaker.domain.CappuccinoCoffee;
 import pl.jaszczur.coffemaker.domain.Coffee;
 import pl.jaszczur.coffemaker.domain.LatteCoffee;
+import pl.jaszczur.coffemaker.ejb.BoshCoffeeMachineLocal;
 import pl.jaszczur.coffemaker.ejb.CoffeeMakerFacadeLocal;
 
 /**

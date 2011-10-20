@@ -8,9 +8,6 @@ package pl.jaszczur.coffemaker.domain;
  *
  * @author jaszczur
  */
-public class CoffeeMaker {
-    public void makeACoffee(Coffee c) {
-        c.prepare();
-        c.notifyMachine();
-    }
+public interface CoffeeMachineAdapter {
+    void prepareCoffee(Coffee c);
 }
