@@ -9,5 +9,7 @@
     </head>
     <body>
         <h1>Hello World!</h1>
+        <a href="coffee/make?type=latte">Make a Latte</a>
+        <a href="coffee/make?type=cappuccino">Make a Cappuccino</a>
     </body>
 </html>
